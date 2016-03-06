@@ -9,8 +9,8 @@
 		<script>
 			$.get( "Template.csv", function( data ) {
 			var content = data;
-			var array = data.split(',');
-			$("#businesses").append(array(0));
+			var arr = data.split(',');
+			$("#businesses").append(arr[0]);
 			//alert( "Load was performed." );
 			});
 		
