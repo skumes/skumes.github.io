@@ -1,9 +1,16 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<title>The Real Horva Time</title>
 		<script async defer src="http://maps.googleapis.com/maps/api/js?key=AIzaSyADG8bMMYhkOS_1rcB6BXrW2Vr8sxF9M6I&callback=initialize"></script>
+		<script
+			src="https://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js">
+		</script>
 		<script>
-			
+			$.get( "Template.csv", function( data ) {
+			//$( ".result" ).html( data );
+			alert( "Load was performed." );
+			});
 		
 			function initialize(){
 				var mapProp = {
