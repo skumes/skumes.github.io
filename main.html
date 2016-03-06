@@ -10,7 +10,8 @@
 			$.get( "Template.csv", function( data ) {
 			var content = data;
 			var arr = data.split(',');
-			$("#businesses").append(arr[0]);
+			for(i = 0; i < arr.length; i++)
+			$("#businesses").append(arr[i] + " ");
 			//alert( "Load was performed." );
 			});
 		
